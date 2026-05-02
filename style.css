@@ -1,55 +1,56 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9fafb;
-    color: #1f2937;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
+/* Menünün dış çerçevesi  */
 .navbar {
-    background-color: #ffffff !important;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 15px 0;
+    background-color: white !important;
+    border-radius: 50px !important; 
+    margin-top: 25px !important; 
+    margin-bottom: 30px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    padding: 10px 30px !important; 
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto;
 }
-
-.navbar-brand {
-    font-weight: 700;
-    color: #111827 !important;
-    letter-spacing: 0.5px;
-}
-
 .nav-link {
+    color: #64748b !important;
     font-weight: 500;
-    color: #4b5563 !important;
-    transition: color 0.2s ease;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+    position: relative; 
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #2563eb !important;
+    color: #3b82f6 !important;
 }
 
-.icerik-alani {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    padding: 50px 15px;
+/* Seçilen kısmın altındaki çizgi */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 2px; 
+    left: 50%;
+    background-color: #3b82f6; 
+    transition: all 0.3s ease;
+    transform: translateX(-50%); 
 }
 
-.icerik-karti {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 750px;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 60%; 
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #9ca3af;
-    font-size: 0.85rem;
-    background-color: #ffffff;
-    border-top: 1px solid #e5e7eb;
+.nav-link.active {
+    color: #3b82f6 !important;
+}
+/* Yazı alanı saydam kısım */
+.saydam-kart {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
 }
