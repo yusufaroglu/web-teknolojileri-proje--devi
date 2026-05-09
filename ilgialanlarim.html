@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Aroğlu - Proje</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DÜZELTME 1: Bootstrap Icons eklendi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menü başlangıcı -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="hakkimda.html" style="color: #3b82f6;">Yusuf Aroğlu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="login.html">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DÜZELTME 2: Gereksiz iç içe div + main yapısı düzeltildi, tek ve doğru main kullanıldı -->
+    <main class="icerik-alani">
+        <div class="container mt-5">
+            <div class="saydam-kart p-4 shadow-sm rounded-4">
+                <h2 class="text-center mb-5 fw-bold">İlgi Alanlarım & Favori Filmlerim</h2>
+
+                <section class="mb-5">
+                    <h3 class="fw-bold h4 mb-3" style="color: #3b82f6;">
+                        <i class="bi bi-film"></i> Sinema Kültürü
+                    </h3>
+                    <p class="mb-4">Sinema dünyasında kurgusu ve görselliğiyle beni etkileyen, defalarca izlediğim favori yapımlarım:</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="godfather.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Godfather">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Godfather</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 10/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="avmevsimi.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Av Mevsimi">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Av Mevsimi</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.5/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="eternalsunshine.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Eternal Sunshine of the Spotless Mind">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Eternal Sunshine of the Spotless Mind</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="killbill.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Kill Bill">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Kill Bill</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="warrior.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Warrior">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Warrior</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="herseycokguzelolacak.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Her Şey Çok Güzel Olacak">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Her Şey Çok Güzel Olacak</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="lalaland.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="La La Land">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">La La Land</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="johnwick.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="John Wick">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">John Wick</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.8/10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="my-5 opacity-25">
+
+                <!-- API ENTEGRASYONu: TMDB'den popüler filmler -->
+                <section class="mb-5">
+                    <h3 class="fw-bold h4 mb-3" style="color: #3b82f6;">
+                        <i class="bi bi-stars"></i> Önerilen Filmler
+                        <small class="text-muted fs-6 fw-normal ms-2">(OMDb API)</small>
+                    </h3>
+                    <p class="mb-4">Sinema tutkunlarına önerilen seçkin yapımlar — veriler OMDb API üzerinden çekilmektedir.</p>
+
+                    <div id="api-yukleniyor" class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status"></div>
+                        <p class="mt-2 text-muted">Filmler yükleniyor...</p>
+                    </div>
+                    <div id="api-hata" class="alert alert-warning d-none" role="alert">
+                        <i class="bi bi-exclamation-triangle"></i> Filmler şu an yüklenemiyor. Lütfen daha sonra tekrar deneyin.
+                    </div>
+
+                    <div id="api-filmler" class="row g-4"></div>
+                </section>
+
+                <hr class="my-5 opacity-25">
+
+                <section class="mb-5">
+                    <h3 class="fw-bold h4 mb-3" style="color: #3b82f6;">
+                        <i class="bi bi-controller"></i> Sevdiğim Oyunlar
+                    </h3>
+                    <p class="mb-4">Çocukluktan kalan bi alışkanlık benim için. Artık sadece oynamak değil belgesellerini de izlemek hoşuma gidiyor.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="rdr2.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Red Dead Redemption 2">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Red Dead Redemption 2</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 10/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="rainbowsix.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Rainbow Six Siege">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Rainbow Six Siege</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.5/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="cs2.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Counter Strike 2">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Counter Strike 2</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="rocket league.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Rocket League">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Rocket League</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="chivalry2.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Chivalry 2">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Chivalry 2</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="phasmophobia.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Phasmophobia">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Phasmophobia</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="lol.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="League of Legends">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">League Of Legends</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.0/10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                                <img src="bf1.jpg" class="card-img-top" style="height: 350px; object-fit: cover;" alt="Battlefield 1">
+                                <div class="card-body p-2">
+                                    <h6 class="fw-bold mb-1">Battlefield 1</h6>
+                                    <p class="text-warning small mb-0">Benim Puanım: 9.8/10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center mt-5 mb-3">
+            <p class="mb-0 text-muted">&copy; 2026 Web Teknolojileri Projesi</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/api.js"></script>
+</body>
+</html>
