@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda - Yusuf Aroğlu</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menü Başlangıcı -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="hakkimda.html" style="color: #3b82f6;">Yusuf Aroğlu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active" href="hakkimda.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="login.html">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik Alanı -->
+    <div class="container mt-5">
+    <div class="saydam-kart p-5 shadow-lg rounded-4 border-0 mb-5 bg-white bg-opacity-75">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-md-4 text-center">
+                <img src="benim_resmim.jpg" alt="Yusuf Aroğlu" class="img-fluid rounded-circle shadow border border-4 border-primary p-1" style="width: 280px; height: 280px; object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            
+            <div class="col-md-8">
+                <h1 class="fw-bold display-5" style="color: #3b82f6;">Merhaba, Ben Yusuf Aroğlu</h1>
+                
+                <p class="lead text-dark">
+                    Teknolojiye ve yazılıma tutkuyla bağlı, sürekli yeni şeyler öğrenmeyi seven bir üniversite öğrencisiyim. Bu projeyi hazırlarken web teknolojilerinin (HTML, CSS, JavaScript ve PHP) arka planını keşfetmek ve modern, kullanıcı dostu tasarımlar ortaya çıkarmak en büyük motivasyonum oldu.
+                </p>
+                <p class="text-secondary">
+                    Kodlama yapmadığım zamanlarda sinemanın kült eserlerini izlemekten (özellikle Godfather tarzı başyapıtlar) ve hikaye derinliği olan oyunlar oynamaktan büyük keyif alırım. Detaylara önem veren, estetik ve işlevselliği bir arada sunmayı hedefleyen bir bakış açısına sahibim.
+                </p>
+                
+                <div class="mt-5 d-flex gap-3 flex-wrap">
+                    <a href="cv.html" class="btn btn-primary px-4 py-2 rounded-pill fw-bold shadow-sm" style="background-color: #3b82f6; border: none;">
+                         <i class="bi bi-file-earmark-person-fill me-2"></i>Özgeçmişimi İncele
+                    </a>
+                    <a href="iletisim.html" class="btn btn-outline-dark px-4 py-2 rounded-pill fw-bold shadow-sm">
+                         <i class="bi bi-envelope-fill me-2"></i>Bana Ulaşın
+                      </a>
+                      <a href="https://github.com/yusufaroglu" target="_blank" class="btn btn-dark px-4 py-2 rounded-pill fw-bold shadow-sm">
+                        <i class="bi bi-github me-2"></i>GitHub
+                     </a>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center mt-5 mb-3">
+            <p class="mb-0 text-muted">&copy; 2026 Web Teknolojileri Projesi</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

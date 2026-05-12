@@ -2,18 +2,17 @@
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-
 $API_KEY = 'b68bc195';
 
 $filmler = [
-    'The Godfather',
-    'Eternal Sunshine of the Spotless Mind',
-    'Kill Bill: Vol. 1',
-    'Warrior',
-    'La La Land',
-    'John Wick',
-    'Pulp Fiction',
-    'Interstellar'
+    'Nightcrawler',
+    'Drive',
+    'Scarface',
+    'Legend',
+    'Seven',
+    'Prisoners',
+    'Goodfellas',
+    'Taxi Driver'
 ];
 
 $sonuclar = [];
