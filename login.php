@@ -14,19 +14,19 @@
     <!-- Menü başlangıcı -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="hakkimda.html" style="color: #3b82f6;">Yusuf Aroğlu</a>
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #3b82f6;">Yusuf Aroğlu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-2">
-                    <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
                     <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmişim</a></li>
                     <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
                     <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                     <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="login.html">Giriş Yap</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="login.php">Giriş Yap</a></li>
                 </ul>
             </div>
         </div>
@@ -50,8 +50,8 @@
                     <p class="text-muted small">Lütfen Sakarya Üniversitesi öğrenci bilgilerinizle giriş yapın.</p>
                 </div>
 
-                <form action="loginislem.php" method="POST">
-                    <div class="mb-3">
+                <form action="loginislem.php" method="POST" onsubmit="return loginJSKontrol()">
+                        <div class="mb-3">
                         <label class="form-label fw-bold text-dark">Kullanıcı Adı (Mail)</label>
                         <input type="text" name="email" class="form-control rounded-pill px-3 py-2" placeholder="b251210051@ogr.sakarya.edu.tr">
                     </div>
@@ -86,5 +86,26 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    function loginJSKontrol() {
+        const email = document.querySelector('input[name="email"]').value.trim();
+        const sifre = document.querySelector('input[name="sifre"]').value.trim();
+
+        if (email === "" || sifre === "") {
+            alert("JS Hata: Lütfen E-posta ve Şifre alanlarını boş bırakmayınız!");
+            return false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("JS Hata: Lütfen geçerli bir e-posta formatı giriniz (örn: isim@ogr.sakarya.edu.tr)!");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
 </body>
 </html>

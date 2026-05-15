@@ -35,7 +35,7 @@ if (empty($girilen_mail) || empty($girilen_sifre) || $girilen_mail !== $tanimli_
 
         <script>
             setTimeout(function() {
-                window.location.href = "hakkimda.html";
+                window.location.href = "index.html";
             }, 3000);
         </script>
     </body>

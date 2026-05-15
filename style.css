@@ -44,6 +44,7 @@
 .nav-link.active {
     color: #3b82f6 !important;
 }
+
 /* Yazı alanı saydam kısım */
 .saydam-kart {
     background: rgba(255, 255, 255, 0.4);
@@ -53,4 +54,13 @@
     border-radius: 24px;
     padding: 40px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+/* Konyaspor Sayfası  */
+.list-group-item:hover {
+    background-color: rgba(27, 94, 32, 0.05) !important;
+    transition: 0.3s;
+}
+.badge {
+    width: 60px;
 }
